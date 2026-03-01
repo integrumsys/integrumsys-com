@@ -14,9 +14,9 @@ module.exports = function renderScripts() {
     const destPathScriptsJS = upath.resolve(upath.dirname(__filename), '../dist/js/scripts.js');
 
     const copyright = `/*!
-* Start Bootstrap - ${packageJSON.title} v${packageJSON.version} (${packageJSON.homepage})
-* Copyright 2013-${new Date().getFullYear()} ${packageJSON.author}
-* Licensed under ${packageJSON.license} (https://github.com/StartBootstrap/${packageJSON.name}/blob/master/LICENSE)
+* ${packageJSON.name} v${packageJSON.version}
+* Copyright ${new Date().getFullYear()} ${packageJSON.author}
+* Licensed under ${packageJSON.license}
 */
 `;
     const scriptsJS = fs.readFileSync(sourcePathScriptsJS);
