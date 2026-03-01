@@ -13,7 +13,7 @@ module.exports = function renderPug(filePath) {
     const html = pug.renderFile(filePath, {
         doctype: 'html',
         filename: filePath,
-        basedir: srcPath
+        basedir: srcPath,
     });
 
     const destPathDirname = upath.dirname(destPath);
@@ -28,7 +28,7 @@ module.exports = function renderPug(filePath) {
         proseWrap: 'preserve',
         endOfLine: 'lf',
         parser: 'html',
-        htmlWhitespaceSensitivity: 'ignore'
+        htmlWhitespaceSensitivity: 'ignore',
     });
 
     fs.writeFileSync(destPath, prettified);

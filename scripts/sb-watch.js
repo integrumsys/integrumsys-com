@@ -18,8 +18,8 @@ process.title = 'pug-watch';
 process.stdout.write('Loading');
 let allPugFiles = {};
 
-watcher.on('add', filePath => _processFile(upath.normalize(filePath), 'add'));
-watcher.on('change', filePath => _processFile(upath.normalize(filePath), 'change'));
+watcher.on('add', (filePath) => _processFile(upath.normalize(filePath), 'add'));
+watcher.on('change', (filePath) => _processFile(upath.normalize(filePath), 'change'));
 watcher.on('ready', () => {
     READY = true;
     console.log(' READY TO ROLL!');
@@ -28,13 +28,12 @@ watcher.on('ready', () => {
 _handleSCSS();
 
 function _processFile(filePath, watchEvent) {
-    
     if (!READY) {
         if (filePath.match(/\.pug$/)) {
             if (!filePath.match(/includes/) && !filePath.match(/mixins/) && !filePath.match(/\/pug\/layouts\//)) {
                 allPugFiles[filePath] = true;
-            }    
-        }    
+            }
+        }
         process.stdout.write('.');
         return;
     }
@@ -59,7 +58,6 @@ function _processFile(filePath, watchEvent) {
     if (filePath.match(/src\/assets\//)) {
         return renderAssets();
     }
-
 }
 
 function _handlePug(filePath, watchEvent) {

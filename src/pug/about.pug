@@ -1,30 +1,29 @@
 doctype html
-html(lang='en')
-
+html(lang="en")
     head
-
-        meta(charset='utf-8')
-        meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description' content='Integrum Systems is an engineering-first company building maintainable, open professional systems. Learn about our mission, approach, and the people behind the work.')
-        meta(name='author' content='Integrum Systems')
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        meta(
+            name="description"
+            content="Integrum Systems is an engineering-first company building maintainable, open professional systems. Learn about our mission, approach, and the people behind the work."
+        )
+        meta(name="author" content="Integrum Systems")
 
         title About — Integrum Systems
 
         // Favicon
-        link(rel='icon' type='image/x-icon' href='assets/favicon.ico')
+        link(rel="icon" type="image/x-icon" href="assets/favicon.ico")
 
         include includes/css.pug
 
     body.d-flex.flex-column.h-100
-
         main.flex-shrink-0
-
             // Navigation
             include includes/navbar.pug
 
             // Page header
             header.bg-fog.py-5.border-bottom
-                .container.py-4(style='max-width: 1200px;')
+                .container.py-4(style="max-width: 1200px")
                     .row.justify-content-center
                         .col-lg-8.text-center
                             h1.display-6.fw-bolder.mb-3 Built on engineering discipline.
@@ -33,7 +32,7 @@ html(lang='en')
 
             // Founding context
             section.py-5
-                .container.py-4(style='max-width: 1200px;')
+                .container.py-4(style="max-width: 1200px")
                     .row.justify-content-center
                         .col-lg-7
                             h2.fw-bolder.mb-3 Why Integrum exists.
@@ -44,23 +43,23 @@ html(lang='en')
 
             // Founder block
             section.py-5.bg-fog
-                .container.py-4(style='max-width: 1200px;')
+                .container.py-4(style="max-width: 1200px")
                     .row.gx-5.align-items-center
                         .col-lg-4.text-center.mb-4.mb-lg-0
                             img.img-fluid.rounded(
-                                src='https://dummyimage.com/400x400/D7DEE8/243041'
-                                alt='[PLACEHOLDER: Founder name] — Founder, Integrum Systems'
-                                style='max-width: 280px;'
+                                src="https://dummyimage.com/400x400/D7DEE8/243041"
+                                alt="[PLACEHOLDER: Founder name] — Founder, Integrum Systems"
+                                style="max-width: 280px"
                             )
                         .col-lg-8
                             h2.fw-bolder.mb-1 [PLACEHOLDER: Cameron Last Name]
-                            p.font-mono.small.mb-3(style='color: #3B4A5E;') Founder, Integrum Systems
+                            p.font-mono.small.mb-3(style="color: #3b4a5e") Founder, Integrum Systems
                             p.mb-0
                                 | [PLACEHOLDER: 3–5 sentences. Technical background and domain, what you have built or worked on previously, and why this problem space. Be specific — degrees, prior roles, and relevant projects are appropriate. Avoid "passionate about" constructions.]
 
             // Operating principles
             section.py-5
-                .container.py-4(style='max-width: 1200px;')
+                .container.py-4(style="max-width: 1200px")
                     .row.justify-content-center
                         .col-lg-7
                             h2.fw-bolder.mb-3 How we operate.
@@ -75,11 +74,11 @@ html(lang='en')
 
             // CTA strip
             section.py-5.bg-primary
-                .container.text-center.py-3(style='max-width: 1200px;')
+                .container.text-center.py-3(style="max-width: 1200px")
                     h2.fw-bolder.text-white.mb-2 Work with us.
-                    p.text-white.mb-4(style="opacity: 0.9;")
+                    p.text-white.mb-4(style="opacity: 0.9")
                         | We engage at the architecture and system level. If you have a well-defined problem or an early-stage technical challenge, we want to hear about it.
-                    a.btn.btn-light.btn-lg.px-4(href='contact.html') Get in touch
+                    a.btn.btn-light.btn-lg.px-4(href="contact.html") Get in touch
 
         // Footer
         include includes/footer.pug

@@ -1,30 +1,26 @@
 doctype html
-html(lang='en')
-
+html(lang="en")
     head
-
-        meta(charset='utf-8')
-        meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description' content='Integrum Systems products. Coming soon.')
-        meta(name='author' content='Integrum Systems')
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        meta(name="description" content="Integrum Systems products. Coming soon.")
+        meta(name="author" content="Integrum Systems")
 
         title Shop — Integrum Systems
 
         // Favicon
-        link(rel='icon' type='image/x-icon' href='assets/favicon.ico')
+        link(rel="icon" type="image/x-icon" href="assets/favicon.ico")
 
         include includes/css.pug
 
     body.d-flex.flex-column.h-100
-
         main.flex-shrink-0
-
             // Navigation
             include includes/navbar.pug
 
             // Page header
             header.bg-fog.py-5.border-bottom
-                .container.py-4(style='max-width: 1200px;')
+                .container.py-4(style="max-width: 1200px")
                     .row.justify-content-center
                         .col-lg-8.text-center
                             h1.display-6.fw-bolder.mb-3 Shop
@@ -33,9 +29,8 @@ html(lang='en')
 
             // Product grid
             section.py-5
-                .container.py-4(style='max-width: 1200px;')
+                .container.py-4(style="max-width: 1200px")
                     .row.gx-4.gy-4.justify-content-center
-
                         // Coming soon card
                         .col-sm-6.col-lg-4
                             .card.h-100
@@ -43,11 +38,11 @@ html(lang='en')
                                     .feature-icon.mx-auto.mb-3
                                         i.bi.bi-box-seam
                                     h5.fw-bolder.mb-1 First product
-                                    p.font-mono.small.mb-3(style='color: #3B4A5E;') Status: in development
+                                    p.font-mono.small.mb-3(style="color: #3b4a5e") Status: in development
                                     p.mb-0
                                         | Details will be published here when available. Contact us if you have a specific requirement in the meantime.
                                 .card-footer.p-4.pt-0.border-top-0.bg-transparent.text-center
-                                    a.btn.btn-outline-primary.btn-sm(href='contact.html') Enquire
+                                    a.btn.btn-outline-primary.btn-sm(href="contact.html") Enquire
 
         // Footer
         include includes/footer.pug

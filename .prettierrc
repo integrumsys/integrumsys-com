@@ -6,5 +6,18 @@
     "semi": true,
     "trailingComma": "es5",
     "bracketSpacing": true,
-    "endOfLine": "lf"
+    "endOfLine": "lf",
+    "plugins": ["@prettier/plugin-pug"],
+    "overrides": [
+        {
+            "files": "*.pug",
+            "options": {
+                "parser": "pug",
+                "pugSingleQuote": false,
+                "pugAttributeSeparator": "none",
+                "pugClassNotation": "literal",
+                "pugIdNotation": "literal"
+            }
+        }
+    ]
 }

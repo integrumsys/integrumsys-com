@@ -1,30 +1,29 @@
 doctype html
-html(lang='en')
-
+html(lang="en")
     head
-
-        meta(charset='utf-8')
-        meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description' content='Integrum Systems offers system integration, technical consulting, and platform architecture services for research teams, advanced operators, and early-stage technical organizations.')
-        meta(name='author' content='Integrum Systems')
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        meta(
+            name="description"
+            content="Integrum Systems offers system integration, technical consulting, and platform architecture services for research teams, advanced operators, and early-stage technical organizations."
+        )
+        meta(name="author" content="Integrum Systems")
 
         title Services — Integrum Systems
 
         // Favicon
-        link(rel='icon' type='image/x-icon' href='assets/favicon.ico')
+        link(rel="icon" type="image/x-icon" href="assets/favicon.ico")
 
         include includes/css.pug
 
     body.d-flex.flex-column.h-100
-
         main.flex-shrink-0
-
             // Navigation
             include includes/navbar.pug
 
             // Page header
             header.bg-fog.py-5.border-bottom
-                .container.py-4(style='max-width: 1200px;')
+                .container.py-4(style="max-width: 1200px")
                     .row.justify-content-center
                         .col-lg-8.text-center
                             h1.display-6.fw-bolder.mb-3 Engineering engagement, at depth.
@@ -33,9 +32,8 @@ html(lang='en')
 
             // Services
             section.py-5
-                .container.py-4(style='max-width: 1200px;')
+                .container.py-4(style="max-width: 1200px")
                     .row.gx-4.gy-4
-
                         // Service 1
                         .col-lg-4
                             .card.h-100.p-4
@@ -44,7 +42,7 @@ html(lang='en')
                                 h2.h5.fw-bolder.mb-2 System Integration &amp; Architecture
                                 p.mb-3
                                     | We design and implement integration architectures for complex multi-component systems. Emphasis on stable interfaces, explicit data contracts, and documented integration points — built for maintainability from day one.
-                                p.font-mono.small.mb-0(style='color: #3B4A5E;')
+                                p.font-mono.small.mb-0(style="color: #3b4a5e")
                                     | Scope: Research systems, instrumentation pipelines, sensor/data integration, modular embedded architectures.
 
                         // Service 2
@@ -55,7 +53,7 @@ html(lang='en')
                                 h2.h5.fw-bolder.mb-2 Technical Consulting
                                 p.mb-3
                                     | Early-stage architecture review, engineering process guidance, and technical decision support. Practical, direct, and documentation-backed. We work with teams making foundational choices about systems they will live with for years.
-                                p.font-mono.small.mb-0(style='color: #3B4A5E;')
+                                p.font-mono.small.mb-0(style="color: #3b4a5e")
                                     | Scope: Architecture audits, technology selection, documentation structure, engineering process design.
 
                         // Service 3
@@ -66,12 +64,12 @@ html(lang='en')
                                 h2.h5.fw-bolder.mb-2 Platform &amp; Infrastructure Development
                                 p.mb-3
                                     | Design and implementation of technical platforms intended for long service life. Modular construction, versioned interfaces, and maintainable codebases. Built to be understood and operated by others.
-                                p.font-mono.small.mb-0(style='color: #3B4A5E;')
+                                p.font-mono.small.mb-0(style="color: #3b4a5e")
                                     | Scope: Software platforms, developer tooling, internal infrastructure, documentation-driven systems.
 
             // Approach block
             section.py-5.bg-fog
-                .container.py-4(style='max-width: 1200px;')
+                .container.py-4(style="max-width: 1200px")
                     .row.justify-content-center
                         .col-lg-7
                             h2.fw-bolder.mb-3 What to expect.
@@ -82,11 +80,11 @@ html(lang='en')
 
             // CTA strip
             section.py-5.bg-primary
-                .container.text-center.py-3(style='max-width: 1200px;')
+                .container.text-center.py-3(style="max-width: 1200px")
                     h2.fw-bolder.text-white.mb-2 Have a systems problem?
-                    p.text-white.mb-4(style="opacity: 0.9;")
+                    p.text-white.mb-4(style="opacity: 0.9")
                         | We engage early and at depth. Bring us a constraint, an architecture question, or an underdefined problem — that is where we do our best work.
-                    a.btn.btn-light.btn-lg.px-4(href='contact.html') Contact Integrum
+                    a.btn.btn-light.btn-lg.px-4(href="contact.html") Contact Integrum
 
         // Footer
         include includes/footer.pug

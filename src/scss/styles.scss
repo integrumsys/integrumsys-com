@@ -4,39 +4,43 @@
 // ============================================================
 
 // Typography
-$font-family-sans-serif: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
-$font-family-monospace:  'IBM Plex Mono', 'Courier New', monospace;
-$headings-font-weight:   600;
-$font-weight-bold:       600;
+$font-family-sans-serif:
+    'IBM Plex Sans',
+    system-ui,
+    -apple-system,
+    sans-serif;
+$font-family-monospace: 'IBM Plex Mono', 'Courier New', monospace;
+$headings-font-weight: 600;
+$font-weight-bold: 600;
 
 // Colors
-$primary:       #0E9AA7; // Integrum Teal
-$secondary:     #3B4A5E; // Slate
-$dark:          #0B1220; // Ink
-$light:         #F4F7FB; // Fog
-$body-color:    #0B1220; // Ink
-$body-bg:       #FFFFFF;
-$border-color:  #D7DEE8;
-$link-color:       #0E9AA7;
-$link-hover-color: #0B7F89;
+$primary: #0e9aa7; // Integrum Teal
+$secondary: #3b4a5e; // Slate
+$dark: #0b1220; // Ink
+$light: #f4f7fb; // Fog
+$body-color: #0b1220; // Ink
+$body-bg: #ffffff;
+$border-color: #d7dee8;
+$link-color: #0e9aa7;
+$link-hover-color: #0b7f89;
 
 // Shape
-$border-radius:    8px;
+$border-radius: 8px;
 $border-radius-lg: 12px;
 $border-radius-sm: 6px;
-$border-width:     1px;
+$border-width: 1px;
 
 // Shadows — restrained, near-flat
-$box-shadow:    0 1px 4px rgba(11, 18, 32, 0.08);
+$box-shadow: 0 1px 4px rgba(11, 18, 32, 0.08);
 $box-shadow-sm: 0 1px 2px rgba(11, 18, 32, 0.06);
-$box-shadow-lg: 0 2px 8px rgba(11, 18, 32, 0.10);
+$box-shadow-lg: 0 2px 8px rgba(11, 18, 32, 0.1);
 
 // Navbar
-$navbar-dark-color:             rgba(215, 222, 232, 0.85);
-$navbar-dark-hover-color:       #0E9AA7;
-$navbar-dark-active-color:      #0E9AA7;
-$navbar-dark-brand-color:       #FFFFFF;
-$navbar-dark-brand-hover-color: #FFFFFF;
+$navbar-dark-color: rgba(215, 222, 232, 0.85);
+$navbar-dark-hover-color: #0e9aa7;
+$navbar-dark-active-color: #0e9aa7;
+$navbar-dark-brand-color: #ffffff;
+$navbar-dark-brand-hover-color: #ffffff;
 
 // Buttons
 $btn-border-radius: 8px;
@@ -44,7 +48,7 @@ $btn-border-radius: 8px;
 // ============================================================
 // Bootstrap Import
 // ============================================================
-@import "bootstrap/scss/bootstrap.scss";
+@import 'bootstrap/scss/bootstrap.scss';
 
 // ============================================================
 // Custom Components & Utilities
@@ -59,18 +63,18 @@ $btn-border-radius: 8px;
     width: 3rem;
     font-size: 1.5rem;
     border-radius: 8px;
-    background-color: #E6F7F8;
-    color: #0E9AA7;
+    background-color: #e6f7f8;
+    color: #0e9aa7;
     flex-shrink: 0;
 }
 
 // Section background utilities
 .bg-fog {
-    background-color: #F4F7FB;
+    background-color: #f4f7fb;
 }
 
 .bg-ink {
-    background-color: #0B1220;
+    background-color: #0b1220;
 }
 
 // Navbar brand — uppercase wordmark treatment
@@ -83,7 +87,7 @@ $btn-border-radius: 8px;
 
 // Muted text — Slate instead of Bootstrap default gray
 .text-muted {
-    color: #3B4A5E !important;
+    color: #3b4a5e !important;
 }
 
 // Monospace utility for technical callouts and constraint notes
@@ -95,13 +99,13 @@ $btn-border-radius: 8px;
 // Section divider
 .section-divider {
     border: 0;
-    border-top: 1px solid #D7DEE8;
+    border-top: 1px solid #d7dee8;
     margin: 4rem 0;
 }
 
 // Card refinements — no shadows by default, subtle on hover
 .card {
-    border: 1px solid #D7DEE8;
+    border: 1px solid #d7dee8;
     box-shadow: none;
     transition: box-shadow 150ms ease;
 }

@@ -1,40 +1,39 @@
 doctype html
-html(lang='en')
-
+html(lang="en")
     head
-
-        meta(charset='utf-8')
-        meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description' content='Integrum Systems builds professional-grade, maintainable systems for research teams, advanced operators, and technical organizations who value reliability, ownership, and long service life.')
-        meta(name='author' content='Integrum Systems')
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        meta(
+            name="description"
+            content="Integrum Systems builds professional-grade, maintainable systems for research teams, advanced operators, and technical organizations who value reliability, ownership, and long service life."
+        )
+        meta(name="author" content="Integrum Systems")
 
         title Integrum Systems
 
         // Favicon
-        link(rel='icon' type='image/x-icon' href='assets/favicon.ico')
+        link(rel="icon" type="image/x-icon" href="assets/favicon.ico")
 
         include includes/css.pug
 
     body.d-flex.flex-column.h-100
-
         main.flex-shrink-0
-
             // Navigation
             include includes/navbar.pug
 
             // Hero
             header.bg-ink.py-5
-                .container.py-5(style='max-width: 1200px;')
+                .container.py-5(style="max-width: 1200px")
                     .row.justify-content-center
                         .col-lg-8.text-center
                             h1.display-5.fw-bolder.text-white.mb-3 Systems built to last.
-                            p.lead.mb-4(style="color: rgba(215,222,232,0.75);")
+                            p.lead.mb-4(style="color: rgba(215, 222, 232, 0.75)")
                                 | Integrum designs and builds maintainable, inspectable infrastructure for research teams, advanced operators, and early-stage technical organizations.
-                            a.btn.btn-primary.btn-lg.px-4(href='contact.html') Get in touch
+                            a.btn.btn-primary.btn-lg.px-4(href="contact.html") Get in touch
 
             // Differentiators
             section#differentiators.py-5.bg-fog
-                .container.py-4(style='max-width: 1200px;')
+                .container.py-4(style="max-width: 1200px")
                     .row.gx-5.gy-4
                         .col-lg-4
                             .d-flex.flex-column.h-100
@@ -60,7 +59,7 @@ html(lang='en')
 
             // Positioning statement
             section.py-5
-                .container.py-4(style='max-width: 1200px;')
+                .container.py-4(style="max-width: 1200px")
                     .row.justify-content-center
                         .col-lg-7.text-center
                             h2.fw-bolder.mb-3 A better way to build.
@@ -71,12 +70,11 @@ html(lang='en')
 
             // CTA strip
             section.py-5.bg-primary
-                .container.text-center.py-3(style='max-width: 1200px;')
+                .container.text-center.py-3(style="max-width: 1200px")
                     h2.fw-bolder.text-white.mb-2 Start a conversation.
-                    p.text-white.mb-4(style="opacity: 0.9;")
+                    p.text-white.mb-4(style="opacity: 0.9")
                         | Whether you have a defined project or an early-stage problem, we engage at the architecture and system level from day one.
-                    a.btn.btn-light.btn-lg.px-4(href='contact.html') Contact Integrum
-
+                    a.btn.btn-light.btn-lg.px-4(href="contact.html") Contact Integrum
 
         // Footer
         include includes/footer.pug
