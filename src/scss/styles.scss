@@ -1,29 +1,116 @@
-// Integrum Systems Color Palette
-// might be helpful: https://stackoverflow.com/questions/45776055/how-to-extend-modify-customize-bootstrap-with-sass
-// Primary Color
-$primary-color: #003366; // Deep Blue
+// ============================================================
+// Integrum Systems — Bootstrap Variable Overrides
+// All overrides must appear BEFORE the Bootstrap import
+// ============================================================
 
-// Secondary Color
-$secondary-color: #A1A1A1; // Silver/Gray
+// Typography
+$font-family-sans-serif: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
+$font-family-monospace:  'IBM Plex Mono', 'Courier New', monospace;
+$headings-font-weight:   600;
+$font-weight-bold:       600;
 
-// Accent Colors
-$accent-color-1: #00B8D4; // Vivid Cyan
-$accent-color-2: #8BC34A; // Lime Green
+// Colors
+$primary:       #0E9AA7; // Integrum Teal
+$secondary:     #3B4A5E; // Slate
+$dark:          #0B1220; // Ink
+$light:         #F4F7FB; // Fog
+$body-color:    #0B1220; // Ink
+$body-bg:       #FFFFFF;
+$border-color:  #D7DEE8;
+$link-color:       #0E9AA7;
+$link-hover-color: #0B7F89;
 
-// Neutral Colors
-$neutral-color-1: #FFFFFF; // White
-$neutral-color-2: #212121; // Dark Charcoal
+// Shape
+$border-radius:    8px;
+$border-radius-lg: 12px;
+$border-radius-sm: 6px;
+$border-width:     1px;
 
+// Shadows — restrained, near-flat
+$box-shadow:    0 1px 4px rgba(11, 18, 32, 0.08);
+$box-shadow-sm: 0 1px 2px rgba(11, 18, 32, 0.06);
+$box-shadow-lg: 0 2px 8px rgba(11, 18, 32, 0.10);
 
-// Import Bootstrap
+// Navbar
+$navbar-dark-color:             rgba(215, 222, 232, 0.85);
+$navbar-dark-hover-color:       #0E9AA7;
+$navbar-dark-active-color:      #0E9AA7;
+$navbar-dark-brand-color:       #FFFFFF;
+$navbar-dark-brand-hover-color: #FFFFFF;
+
+// Buttons
+$btn-border-radius: 8px;
+
+// ============================================================
+// Bootstrap Import
+// ============================================================
 @import "bootstrap/scss/bootstrap.scss";
 
-// Custom SCSS for feature component with Bootstrap icon
-.feature {
+// ============================================================
+// Custom Components & Utilities
+// ============================================================
+
+// Feature icon block — teal tint background, teal icon
+.feature-icon {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: 4rem;
-    width: 4rem;
-    font-size: 2rem;
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    background-color: #E6F7F8;
+    color: #0E9AA7;
+    flex-shrink: 0;
+}
+
+// Section background utilities
+.bg-fog {
+    background-color: #F4F7FB;
+}
+
+.bg-ink {
+    background-color: #0B1220;
+}
+
+// Navbar brand — uppercase wordmark treatment
+.navbar-brand {
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+}
+
+// Muted text — Slate instead of Bootstrap default gray
+.text-muted {
+    color: #3B4A5E !important;
+}
+
+// Monospace utility for technical callouts and constraint notes
+.font-mono {
+    font-family: 'IBM Plex Mono', 'Courier New', monospace;
+    font-size: 0.875em;
+}
+
+// Section divider
+.section-divider {
+    border: 0;
+    border-top: 1px solid #D7DEE8;
+    margin: 4rem 0;
+}
+
+// Card refinements — no shadows by default, subtle on hover
+.card {
+    border: 1px solid #D7DEE8;
+    box-shadow: none;
+    transition: box-shadow 150ms ease;
+}
+
+.card:hover {
+    box-shadow: $box-shadow;
+}
+
+// Strip gradients — Bootstrap adds bg-gradient modifier we never want
+.bg-gradient {
+    background-image: none !important;
 }
