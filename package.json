@@ -1,7 +1,7 @@
 {
-    "title": "Business Frontpage",
-    "name": "startbootstrap-business-frontpage",
-    "version": "5.0.9",
+    "title": "Integrum Systems — Company Website",
+    "name": "integrumsys-com",
+    "version": "1.0.0",
     "scripts": {
         "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
         "build:assets": "node scripts/build-assets.js",
@@ -13,28 +13,22 @@
         "start:debug": "npm run build && node scripts/start-debug.js",
         "format": "prettier --write \"src/**/*.{scss,js,pug}\" \"scripts/**/*.js\" \"*.json\""
     },
-    "description": "A simple business HTML landing page built with Bootstrap",
+    "description": "Marketing website for Integrum Systems Inc.",
     "keywords": [
-        "css",
-        "sass",
-        "html",
-        "responsive",
-        "theme",
-        "template"
+        "integrum",
+        "systems integration",
+        "technical consulting"
     ],
-    "homepage": "https://startbootstrap.com/template/business-frontpage",
+    "homepage": "https://integrumsys.com",
     "bugs": {
-        "url": "https://github.com/StartBootstrap/startbootstrap-business-frontpage/issues",
-        "email": "feedback@startbootstrap.com"
+        "url": "https://github.com/integrumsys/integrumsys-com/issues",
+        "email": "contact@integrumsys.com"
     },
     "license": "MIT",
-    "author": "Start Bootstrap",
-    "contributors": [
-        "David Miller (https://davidmiller.io/)"
-    ],
+    "author": "Integrum Systems Inc.",
     "repository": {
         "type": "git",
-        "url": "https://github.com/StartBootstrap/startbootstrap-business-frontpage.git"
+        "url": "https://github.com/integrumsys/integrumsys-com.git"
     },
     "dependencies": {
         "bootstrap": "5.2.3"

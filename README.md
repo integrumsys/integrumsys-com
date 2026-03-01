@@ -1,41 +1,56 @@
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/StartBootstrap/startbootstrap-modern-business/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/startbootstrap-modern-business.svg)](https://www.npmjs.com/package/startbootstrap-modern-business)
+# Integrum Systems — Company Website
 
-## Template
+Marketing website for [Integrum Systems Inc.](https://integrumsys.com) Built with Bootstrap 5, Pug, and Sass via a Node.js build pipeline.
 
-Uses [Business Frontpage](https://startbootstrap.com/template/business-frontpage) (and other StartBootrap tempplate [1](https://github.com/startbootstrap/startbootstrap-shop-homepage), [2](https://github.com/startbootstrap/startbootstrap-shop-item))
-- Multipurpose, full website template for [Bootstrap](https://getbootstrap.com/) 
-- Created by [Start Bootstrap](https://startbootstrap.com/)
-- Template includes 17 unique HTML pages and a working PHP contact form
-- Start Bootstrap is based on the [Bootstrap](https://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
-- Copyright 2013-2023 Start Bootstrap LLC. Code released under the [MIT](https://github.com/StartBootstrap/startbootstrap-modern-business/blob/master/LICENSE) license.
+## Pages
 
-### Usage
+| Page | Source | Description |
+|------|--------|-------------|
+| Home | `src/pug/index.pug` | Hero, differentiators, CTA |
+| About | `src/pug/about.pug` | Founding context, founder, operating principles |
+| Services | `src/pug/services.pug` | Service cards, approach block |
+| Contact | `src/pug/contact.pug` | Contact form, direct info |
+| Shop | `src/pug/shop.pug` | Coming Soon product card |
+| Privacy | `src/pug/privacy.pug` | Privacy policy stub |
+| Terms | `src/pug/terms.pug` | Terms of service stub |
 
-Clone the source files of the theme and navigate into the theme's root directory. Run `npm install` and then run `npm start` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `package.json` file to see which scripts are included.
+## Stack
 
-#### npm Scripts
+- **Bootstrap** 5.2.3
+- **Pug** 3.0.2 — HTML templating
+- **Sass** 1.60.0 — CSS compilation
+- **Prettier** 3.x + `@prettier/plugin-pug` — formatting
+- **Browser Sync** — live reload dev server
 
-* `npm run build` builds the project - this builds assets, HTML, JS, and CSS into `dist`
-  * `npm run build:assets` copies the files in the `src/assets/` directory into `dist`
-  * `npm run build:pug` compiles the Pug located in the `src/pug/` directory into `dist`
-  * `npm run build:scripts` brings the `src/js/scripts.js` file into `dist`
-  * `npm run build:scss` compiles the SCSS files located in the `src/scss/` directory into `dist`
-* `npm run clean` deletes the `dist` directory to prepare for rebuilding the project
-* `npm run start:debug` runs the project in debug mode
-* `npm start` or `npm run start` runs the project, launches a live preview in your default browser, and watches for changes made to files in `src`
+## npm Scripts
 
-You must have npm installed in order to use this build environment.
+| Command | Description |
+|---------|-------------|
+| `npm run build` | Clean + compile all sources to `dist/` |
+| `npm run build:pug` | Compile Pug to HTML |
+| `npm run build:scss` | Compile Sass to CSS |
+| `npm run build:scripts` | Copy JS to dist |
+| `npm run build:assets` | Copy assets to dist |
+| `npm run clean` | Delete `dist/` |
+| `npm start` | Build + launch live preview with watch |
+| `npm run format` | Format all source files with Prettier |
 
-### Contact Form
+## Development
 
-The contact form available with this theme is prebuilt to use [SB Forms](https://startbootstrap.com/solution/contact-forms).
-SB Forms is a simple form solution for adding functional forms to your theme. Since this theme is prebuilt using our
-SB Forms markup, all you need to do is sign up for [SB Forms on Start Bootstrap](https://startbootstrap.com/solution/contact-forms).
+```sh
+npm install
+npm start          # builds and opens browser with live reload
+```
 
-After signing up you will need to set the domain name your form will be used on, and you will then see your
-access key. Copy this and paste it into the `data-sb-form-api-token='API_TOKEN'` data attribute in place of
-`API_TOKEN`. That's it! Your forms will be up and running!
+All compiled output goes to `dist/`. Do not edit files in `dist/` directly.
 
-If you aren't using SB Forms, simply delete the custom data attributes from the form, and remove the link above the
-closing `</body>` tag to SB Forms.
+## CI
+
+GitHub Actions runs on every push and pull request to `master`:
+1. Prettier format check
+2. Full build
+3. Verify all 7 HTML pages are present in `dist/`
+
+## License
+
+MIT — see [LICENSE](LICENSE).
