@@ -5,83 +5,81 @@ html(lang='en')
 
         meta(charset='utf-8')
         meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description' content='')
-        meta(name='author' content='')
+        meta(name='description' content='Integrum Systems is an engineering-first company building maintainable, open professional systems. Learn about our mission, approach, and the people behind the work.')
+        meta(name='author' content='Integrum Systems')
 
-        title About Us
+        title About — Integrum Systems
 
         // Favicon
         link(rel='icon' type='image/x-icon' href='assets/favicon.ico')
 
         include includes/css.pug
 
-    body.d-flex.flex-column
+    body.d-flex.flex-column.h-100
 
         main.flex-shrink-0
 
             // Navigation
             include includes/navbar.pug
 
-            // Header
-            header.py-5
-                .container.px-5
+            // Page header
+            header.bg-fog.py-5.border-bottom
+                .container.py-4(style='max-width: 1200px;')
                     .row.justify-content-center
-                        .col-lg-8.col-xxl-6
-                            .text-center.my-5
-                                h1.fw-bolder.mb-3 Our mission is to make building websites easier for everyone.
-                                p.lead.fw-normal.text-muted.mb-4 Start Bootstrap was built on the idea that quality, functional website templates and themes should be available to everyone. Use our open source, free products, or support us by purchasing one of our premium products or services.
-                                a.btn.btn-primary.btn-lg(href='#scroll-target') Read our story
+                        .col-lg-8.text-center
+                            h1.display-6.fw-bolder.mb-3 Built on engineering discipline.
+                            p.lead.mb-0
+                                | Integrum is structured around a long-horizon commitment to systems that can be understood, maintained, and trusted.
 
-            // About section one
-            section.py-5.bg-light#scroll-target
-                .container.px-5.my-5
-
-                    .row.gx-5.align-items-center
-                        .col-lg-6
-                            img.img-fluid.rounded.mb-5.mb-lg-0(src='https://dummyimage.com/600x400/343a40/6c757d' alt='...')
-                        .col-lg-6
-                            h2.fw-bolder Our founding
-                            p.lead.fw-normal.text-muted.mb-0 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto est, ut esse a labore aliquam beatae expedita. Blanditiis impedit numquam libero molestiae et fugit cupiditate, quibusdam expedita, maiores eaque quisquam.
-
-            // About section two
+            // Founding context
             section.py-5
-                .container.px-5.my-5
+                .container.py-4(style='max-width: 1200px;')
+                    .row.justify-content-center
+                        .col-lg-7
+                            h2.fw-bolder.mb-3 Why Integrum exists.
+                            p.mb-3
+                                | The gap between hobbyist tools and enterprise platforms is wide, expensive, and often filled with vendor lock-in. Research teams, independent engineers, and early technical organizations operate in this gap daily — building on systems that are underdocumented, unserviceable, or priced out of their range.
+                            p.mb-0
+                                | Integrum was founded to close that gap. We build infrastructure-grade systems that are open by default, staged for long service life, and designed for the people doing the actual technical work.
 
+            // Founder block
+            section.py-5.bg-fog
+                .container.py-4(style='max-width: 1200px;')
                     .row.gx-5.align-items-center
-                        .col-lg-6.order-first.order-lg-last
-                            img.img-fluid.rounded.mb-5.mb-lg-0(src='https://dummyimage.com/600x400/343a40/6c757d' alt='...')
-                        .col-lg-6
-                            h2.fw-bolder Growth &amp; beyond
-                            p.lead.fw-normal.text-muted.mb-0 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto est, ut esse a labore aliquam beatae expedita. Blanditiis impedit numquam libero molestiae et fugit cupiditate, quibusdam expedita, maiores eaque quisquam.
+                        .col-lg-4.text-center.mb-4.mb-lg-0
+                            img.img-fluid.rounded(
+                                src='https://dummyimage.com/400x400/D7DEE8/243041'
+                                alt='[PLACEHOLDER: Founder name] — Founder, Integrum Systems'
+                                style='max-width: 280px;'
+                            )
+                        .col-lg-8
+                            h2.fw-bolder.mb-1 [PLACEHOLDER: Cameron Last Name]
+                            p.font-mono.small.mb-3(style='color: #3B4A5E;') Founder, Integrum Systems
+                            p.mb-0
+                                | [PLACEHOLDER: 3–5 sentences. Technical background and domain, what you have built or worked on previously, and why this problem space. Be specific — degrees, prior roles, and relevant projects are appropriate. Avoid "passionate about" constructions.]
 
+            // Operating principles
+            section.py-5
+                .container.py-4(style='max-width: 1200px;')
+                    .row.justify-content-center
+                        .col-lg-7
+                            h2.fw-bolder.mb-3 How we operate.
+                            p.mb-3
+                                | These are not aspirational values. They are structural commitments that shape how we build and communicate.
+                            ul.mb-0
+                                li.mb-2 We publish our constraints. If a system has limits, we document them.
+                                li.mb-2 We admit tradeoffs. Transparency builds authority.
+                                li.mb-2 We version visibly. Changelogs, migrations, and lifecycle notices are not optional.
+                                li.mb-2 We avoid artificial urgency. No countdown timers. No fake scarcity.
+                                li We document like engineers, not marketers.
 
-            // Team members section
-            section.py-5.bg-light
-                .container.px-5.my-5
-                    .text-center
-                        h2.fw-bolder Our team
-                        p.lead.fw-normal.text-muted.mb-5 Dedicated to quality and your success
-                    .row.gx-5.row-cols-1.row-cols-sm-2.row-cols-xl-4.justify-content-center
-                        .col.mb-5.mb-5.mb-xl-0
-                            .text-center
-                                img.img-fluid.rounded-circle.mb-4.px-4(src='https://dummyimage.com/150x150/ced4da/6c757d' alt='...')
-                                h5.fw-bolder Ibbie Eckart
-                                .fst-italic.text-muted Founder &amp; CEO
-                        .col.mb-5.mb-5.mb-xl-0
-                            .text-center
-                                img.img-fluid.rounded-circle.mb-4.px-4(src='https://dummyimage.com/150x150/ced4da/6c757d' alt='...')
-                                h5.fw-bolder Arden Vasek
-                                .fst-italic.text-muted CFO
-                        .col.mb-5.mb-5.mb-sm-0
-                            .text-center
-                                img.img-fluid.rounded-circle.mb-4.px-4(src='https://dummyimage.com/150x150/ced4da/6c757d' alt='...')
-                                h5.fw-bolder Toribio Nerthus
-                                .fst-italic.text-muted Operations Manager
-                        .col.mb-5
-                            .text-center
-                                img.img-fluid.rounded-circle.mb-4.px-4(src='https://dummyimage.com/150x150/ced4da/6c757d' alt='...')
-                                h5.fw-bolder Malvina Cilla
-                                .fst-italic.text-muted CTO
+            // CTA strip
+            section.py-5.bg-primary
+                .container.text-center.py-3(style='max-width: 1200px;')
+                    h2.fw-bolder.text-white.mb-2 Work with us.
+                    p.text-white.mb-4(style="opacity: 0.9;")
+                        | We engage at the architecture and system level. If you have a well-defined problem or an early-stage technical challenge, we want to hear about it.
+                    a.btn.btn-light.btn-lg.px-4(href='contact.html') Get in touch
 
         // Footer
         include includes/footer.pug

@@ -5,10 +5,10 @@ html(lang='en')
 
         meta(charset='utf-8')
         meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description' content='')
-        meta(name='author' content='')
+        meta(name='description' content='Integrum Systems offers system integration, technical consulting, and platform architecture services for research teams, advanced operators, and early-stage technical organizations.')
+        meta(name='author' content='Integrum Systems')
 
-        title Integrum Systems
+        title Services — Integrum Systems
 
         // Favicon
         link(rel='icon' type='image/x-icon' href='assets/favicon.ico')
@@ -22,55 +22,71 @@ html(lang='en')
             // Navigation
             include includes/navbar.pug
 
-            // Page Content
-            .container.px-4.px-lg-5
+            // Page header
+            header.bg-fog.py-5.border-bottom
+                .container.py-4(style='max-width: 1200px;')
+                    .row.justify-content-center
+                        .col-lg-8.text-center
+                            h1.display-6.fw-bolder.mb-3 Engineering engagement, at depth.
+                            p.lead.mb-0
+                                | We work with research institutions, advanced builders, and early technical organizations to design, build, and document systems that hold up over time.
 
-                // Heading Row
-                .row.gx-4.gx-lg-5.align-items-center.my-5
-                    .col-lg-7
-                        img.img-fluid.rounded.mb-4.mb-lg-0(src='https://dummyimage.com/900x400/dee2e6/6c757d.jpg' alt='...')
+            // Services
+            section.py-5
+                .container.py-4(style='max-width: 1200px;')
+                    .row.gx-4.gy-4
 
-                    .col-lg-5
-                        h1.font-weight-light Business Name or Tagline
-                        p
-                            | This is a template that is great for small businesses. It doesn't have too much fancy flare to it, but it makes a great use of the standard Bootstrap core components. Feel free to use this template for any project you want!
-                        a.btn.btn-primary(href='#!') Call to Action!
+                        // Service 1
+                        .col-lg-4
+                            .card.h-100.p-4
+                                .feature-icon.mb-3
+                                    i.bi.bi-diagram-3
+                                h2.h5.fw-bolder.mb-2 System Integration &amp; Architecture
+                                p.mb-3
+                                    | We design and implement integration architectures for complex multi-component systems. Emphasis on stable interfaces, explicit data contracts, and documented integration points — built for maintainability from day one.
+                                p.font-mono.small.mb-0(style='color: #3B4A5E;')
+                                    | Scope: Research systems, instrumentation pipelines, sensor/data integration, modular embedded architectures.
 
-                // Call to Action
-                .card.text-white.bg-secondary.my-5.py-4.text-center
-                    .card-body
-                        p.text-white.m-0
-                            | This call to action card is a great place to showcase some important information or display a clever tagline!
+                        // Service 2
+                        .col-lg-4
+                            .card.h-100.p-4
+                                .feature-icon.mb-3
+                                    i.bi.bi-terminal
+                                h2.h5.fw-bolder.mb-2 Technical Consulting
+                                p.mb-3
+                                    | Early-stage architecture review, engineering process guidance, and technical decision support. Practical, direct, and documentation-backed. We work with teams making foundational choices about systems they will live with for years.
+                                p.font-mono.small.mb-0(style='color: #3B4A5E;')
+                                    | Scope: Architecture audits, technology selection, documentation structure, engineering process design.
 
-                // Content Row
-                .row.gx-4.gx-lg-5
-                    .col-md-4.mb-5
-                        .card.h-100
-                            .card-body
-                                h2.card-title Card One
-                                p.card-text
-                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.
-                            .card-footer
-                                a.btn.btn-primary.btn-sm(href='#!') More Info
+                        // Service 3
+                        .col-lg-4
+                            .card.h-100.p-4
+                                .feature-icon.mb-3
+                                    i.bi.bi-layers
+                                h2.h5.fw-bolder.mb-2 Platform &amp; Infrastructure Development
+                                p.mb-3
+                                    | Design and implementation of technical platforms intended for long service life. Modular construction, versioned interfaces, and maintainable codebases. Built to be understood and operated by others.
+                                p.font-mono.small.mb-0(style='color: #3B4A5E;')
+                                    | Scope: Software platforms, developer tooling, internal infrastructure, documentation-driven systems.
 
-                    .col-md-4.mb-5
-                        .card.h-100
-                            .card-body
-                                h2.card-title Card Two
-                                p.card-text
-                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex natus at dolorem enim! Nesciunt pariatur voluptatem sunt quam eaque, vel, non in id dolore voluptates quos eligendi labore.
-                            .card-footer
-                                a.btn.btn-primary.btn-sm(href='#!') More Info
+            // Approach block
+            section.py-5.bg-fog
+                .container.py-4(style='max-width: 1200px;')
+                    .row.justify-content-center
+                        .col-lg-7
+                            h2.fw-bolder.mb-3 What to expect.
+                            p.mb-3
+                                | Every engagement starts with a structured scope — written constraints, defined interfaces, and explicit documentation of assumptions. We do not scope creep silently; changes are flagged and documented before implementation.
+                            p.mb-0
+                                | We deliver working systems with documentation that enables you to maintain, modify, and understand what was built — without ongoing dependency on us.
 
-                    .col-md-4.mb-5
-                        .card.h-100
-                            .card-body
-                                h2.card-title Card Three
-                                p.card-text
-                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.
-                            .card-footer
-                                a.btn.btn-primary.btn-sm(href='#!') More Info
-
+            // CTA strip
+            section.py-5.bg-primary
+                .container.text-center.py-3(style='max-width: 1200px;')
+                    h2.fw-bolder.text-white.mb-2 Have a systems problem?
+                    p.text-white.mb-4(style="opacity: 0.9;")
+                        | We engage early and at depth. Bring us a constraint, an architecture question, or an underdefined problem — that is where we do our best work.
+                    a.btn.btn-light.btn-lg.px-4(href='contact.html') Contact Integrum
 
         // Footer
         include includes/footer.pug

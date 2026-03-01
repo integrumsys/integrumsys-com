@@ -5,149 +5,93 @@ html(lang='en')
 
         meta(charset='utf-8')
         meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description', content)
-        meta(name='author', content)
+        meta(name='description' content='Get in touch with Integrum Systems. Direct inquiries, project scoping, and technical questions welcome. Email: contact@integrumsys.com.')
+        meta(name='author' content='Integrum Systems')
 
-        title Contact Us
+        title Contact — Integrum Systems
 
         // Favicon
         link(rel='icon' type='image/x-icon' href='assets/favicon.ico')
 
         include includes/css.pug
 
-    body.d-flex.flex-column
+    body.d-flex.flex-column.h-100
 
         main.flex-shrink-0
 
             // Navigation
             include includes/navbar.pug
 
-            // Page content ------------------------------------------------
+            // Page header
+            header.bg-fog.py-5.border-bottom
+                .container.py-4(style='max-width: 1200px;')
+                    .row.justify-content-center
+                        .col-lg-8.text-center
+                            h1.display-6.fw-bolder.mb-3 Get in touch.
+                            p.lead.mb-0
+                                | Direct inquiries, project scoping, and technical questions welcome. We respond to every message.
+
+            // Contact section
             section.py-5
+                .container.py-4(style='max-width: 1200px;')
+                    .row.justify-content-center
+                        .col-lg-7
 
-                .container.px-5
+                            // Direct email notice
+                            .alert.mb-4(style='background-color: #E6F7F8; border: 1px solid #0E9AA7; color: #0B1220;')
+                                | Form submission is being set up. Reach us directly at&nbsp;
+                                a.fw-500(href='mailto:contact@integrumsys.com' style='color: #0B7F89;') contact@integrumsys.com
 
-                    // Contact form ------------------------------------------------
-                    .bg-light.rounded-3.py-5.px-4.px-md-5.mb-5
-                        .text-center.mb-5
-                            .feature.bg-primary.bg-gradient.text-white.rounded-3.mb-3
-                                i.bi.bi-envelope
-                            h1.fw-bolder Get in touch
-                            p.lead.fw-normal.text-muted.mb-0 We'd love to hear from you
-                        .row.gx-5.justify-content-center
-                            .col-lg-8.col-xl-6
+                            // Contact form
+                            form(action='mailto:contact@integrumsys.com' method='GET')
 
-                                // * * * * * * * * * * * * * * *
-                                // * * SB Forms Contact Form * *
-                                // * * * * * * * * * * * * * * *
+                                // Name
+                                .form-floating.mb-3
+                                    input#name.form-control(
+                                        type='text'
+                                        placeholder='Full name'
+                                        required
+                                    )
+                                    label(for='name') Full name
 
-                                // This form is pre-integrated with SB Forms.
-                                // To make this form functional, sign up at
-                                // https://startbootstrap.com/solution/contact-forms
-                                // to get an API token!
+                                // Email
+                                .form-floating.mb-3
+                                    input#email.form-control(
+                                        type='email'
+                                        placeholder='name@example.com'
+                                        required
+                                    )
+                                    label(for='email') Email address
 
-                                form#contactForm(data-sb-form-api-token='API_TOKEN')
+                                // Phone (optional)
+                                .form-floating.mb-3
+                                    input#phone.form-control(
+                                        type='tel'
+                                        placeholder='Phone number (optional)'
+                                    )
+                                    label(for='phone') Phone number (optional)
 
-                                    // Name input ------------------------------------------------
-                                    .form-floating.mb-3
-                                        input#name.form-control(
-                                            type='text',
-                                            placeholder='Enter your name...'
-                                            data-sb-validations='required'
-                                        )
-                                        label(for='name') Full name
-                                        .invalid-feedback(data-sb-feedback='name:required')
-                                            | A name is required.
+                                // Message
+                                .form-floating.mb-4
+                                    textarea#message.form-control(
+                                        placeholder='Message'
+                                        required
+                                        style='height: 10rem;'
+                                    )
+                                    label(for='message') Message
 
-                                    // Email address input ------------------------------------------------
-                                    .form-floating.mb-3
-                                        input#email.form-control(
-                                            type='email',
-                                            placeholder='name@example.com'
-                                            data-sb-validations='required,email'
-                                        )
-                                        label(for='email') Email address
-                                        .invalid-feedback(data-sb-feedback='email:required')
-                                            | An email is required.
-                                        .invalid-feedback(data-sb-feedback='email:email')
-                                            | Email is not valid.
+                                .d-grid
+                                    button.btn.btn-primary.btn-lg(type='submit') Send message
 
-                                    // Phone number input ------------------------------------------------
-                                    .form-floating.mb-3
-                                        input#phone.form-control(
-                                            type='tel',
-                                            placeholder='(123) 456-7890'
-                                            data-sb-validations='required'
-                                        )
-                                        label(for='phone') Phone number
-                                        .invalid-feedback(data-sb-feedback='phone:required')
-                                            | A phone number is required.
-
-                                    // Message input ------------------------------------------------
-                                    .form-floating.mb-3
-                                        textarea#message.form-control(
-                                            type='text',
-                                            placeholder='Enter your message here...',
-                                            style='height: 10rem;'
-                                            data-sb-validations='required'
-                                        )
-                                        label(for='message') Message
-                                        .invalid-feedback(data-sb-feedback='message:required')
-                                            | A message is required.
-
-                                    // Submit success message
-                                    //
-                                    // This is what your users will see when the form
-                                    // has successfully submitted
-                                    #submitSuccessMessage.d-none
-                                        .text-center.mb-3
-                                            .fw-bolder Form submission successful!
-                                            | To activate this form, sign up at
-                                            br
-                                            a(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
-
-                                    // Submit error message
-                                    //
-                                    // This is what your users will see when there is
-                                    // an error submitting the form
-                                    #submitErrorMessage.d-none
-                                        .text-center.text-danger.mb-3 Error sending message!
-
-                                    // Submit Button
-                                    .d-grid
-                                        button#submitButton.btn.btn-primary.btn-lg.disabled(type='submit') Submit
-
-                    // Contact cards ------------------------------------------------
-                    .row.gx-5.row-cols-2.row-cols-lg-4.py-5
-                        .col
-                            .feature.bg-primary.bg-gradient.text-white.rounded-3.mb-3
-                                i.bi.bi-chat-dots
-                            .h5.mb-2 Chat with us
-                            p.text-muted.mb-0 Chat live with one of our support specialists.
-                        .col
-                            .feature.bg-primary.bg-gradient.text-white.rounded-3.mb-3
-                                i.bi.bi-people
-                            .h5 Ask the community
-                            p.text-muted.mb-0 Explore our community forums and communicate with other users.
-                        .col
-                            .feature.bg-primary.bg-gradient.text-white.rounded-3.mb-3
-                                i.bi.bi-question-circle
-                            .h5 Support center
-                            p.text-muted.mb-0 Browse pillars's and support articles to find solutions.
-                        .col
-                            .feature.bg-primary.bg-gradient.text-white.rounded-3.mb-3
-                                i.bi.bi-telephone
-                            .h5 Call us
-                            p.text-muted.mb-0 Call us during normal business hours at (555) 892-9403.
+                            // Direct contact
+                            hr.my-4(style='border-color: #D7DEE8;')
+                            p.mb-1
+                                span.font-mono.small(style='color: #3B4A5E;') Email
+                                |  &nbsp;
+                                a(href='mailto:contact@integrumsys.com') contact@integrumsys.com
+                            p.mb-0.text-muted.small Based in Canada.
 
         // Footer
         include includes/footer.pug
 
         include includes/scripts.pug
-
-        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-        // * *                               SB Forms JS                               * *
-        // * * Activate your form at https://startbootstrap.com/solution/contact-forms * *
-        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-
-        script(src='https://cdn.startbootstrap.com/sb-forms-latest.js')

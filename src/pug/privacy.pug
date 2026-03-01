@@ -1,0 +1,46 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description' content='Privacy policy for Integrum Systems.')
+        meta(name='author' content='Integrum Systems')
+
+        title Privacy — Integrum Systems
+
+        // Favicon
+        link(rel='icon' type='image/x-icon' href='assets/favicon.ico')
+
+        include includes/css.pug
+
+    body.d-flex.flex-column.h-100
+
+        main.flex-shrink-0
+
+            // Navigation
+            include includes/navbar.pug
+
+            // Page header
+            header.bg-fog.py-5.border-bottom
+                .container.py-4(style='max-width: 1200px;')
+                    h1.display-6.fw-bolder.mb-0 Privacy Policy
+
+            // Content
+            section.py-5
+                .container.py-4(style='max-width: 1200px;')
+                    .row.justify-content-center
+                        .col-lg-7
+                            p.mb-3
+                                | This privacy policy is under development. Integrum Systems does not currently sell, trade, or share personal data with third parties.
+                            p.mb-3
+                                | Contact us at&nbsp;
+                                a(href='mailto:contact@integrumsys.com') contact@integrumsys.com
+                                |  with any privacy questions.
+                            p.font-mono.small.mb-0(style='color: #3B4A5E;') Last updated: March 2026
+
+        // Footer
+        include includes/footer.pug
+
+        include includes/scripts.pug

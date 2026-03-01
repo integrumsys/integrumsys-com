@@ -5,10 +5,10 @@ html(lang='en')
 
         meta(charset='utf-8')
         meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description' content='')
-        meta(name='author' content='')
+        meta(name='description' content='Integrum Systems products. Coming soon.')
+        meta(name='author' content='Integrum Systems')
 
-        title Integrum Systems
+        title Shop — Integrum Systems
 
         // Favicon
         link(rel='icon' type='image/x-icon' href='assets/favicon.ico')
@@ -22,177 +22,32 @@ html(lang='en')
             // Navigation
             include includes/navbar.pug
 
-            // Header
-            header.bg-dark.py-5
-                .container.px-4.px-lg-5.my-5
-                    .text-center.text-white
-                        h1.display-4.fw-bolder Shop in style
-                        p.lead.fw-normal.text-white-50.mb-0 With this shop hompeage template
+            // Page header
+            header.bg-fog.py-5.border-bottom
+                .container.py-4(style='max-width: 1200px;')
+                    .row.justify-content-center
+                        .col-lg-8.text-center
+                            h1.display-6.fw-bolder.mb-3 Shop
+                            p.lead.mb-0
+                                | Hardware, tooling, and reference systems from Integrum. Products in development.
 
-            // Section
+            // Product grid
             section.py-5
-                .container.px-4.px-lg-5.mt-5
-                    .row.gx-4.gx-lg-5.row-cols-2.row-cols-md-3.row-cols-xl-4.justify-content-center
-                        .col.mb-5
+                .container.py-4(style='max-width: 1200px;')
+                    .row.gx-4.gy-4.justify-content-center
+
+                        // Coming soon card
+                        .col-sm-6.col-lg-4
                             .card.h-100
-                                // Product image
-                                img.card-img-top(src='https://dummyimage.com/450x300/dee2e6/6c757d.jpg' alt='...')
-                                // Product details
-                                .card-body.p-4
-                                    .text-center
-                                        // Product name
-                                        h5.fw-bolder Fancy Product
-                                        // Product price
-                                        | $40.00 - $80.00
-                                // Product actions
-                                .card-footer.p-4.pt-0.border-top-0.bg-transparent
-                                    .text-center
-                                        a.btn.btn-outline-dark.mt-auto(href='#') View options
-                        .col.mb-5
-                            .card.h-100
-                                // Sale badge
-                                .badge.bg-dark.text-white.position-absolute(style='top: 0.5rem; right: 0.5rem;') Sale
-                                // Product image
-                                img.card-img-top(src='https://dummyimage.com/450x300/dee2e6/6c757d.jpg' alt='...')
-                                // Product details
-                                .card-body.p-4
-                                    .text-center
-                                        // Product name
-                                        h5.fw-bolder Special Item
-                                        // Product reviews
-                                        .d-flex.justify-content-center.small.text-warning.mb-2
-                                            .bi-star-fill
-                                            .bi-star-fill
-                                            .bi-star-fill
-                                            .bi-star-fill
-                                            .bi-star-fill
-                                        // Product price
-                                        span.text-muted.text-decoration-line-through $20.00
-                                        | $18.00
-                                // Product actions
-                                .card-footer.p-4.pt-0.border-top-0.bg-transparent
-                                    .text-center
-                                        a.btn.btn-outline-dark.mt-auto(href='#') Add to cart
-                        .col.mb-5
-                            .card.h-100
-                                // Sale badge
-                                .badge.bg-dark.text-white.position-absolute(style='top: 0.5rem; right: 0.5rem;') Sale
-                                // Product image
-                                img.card-img-top(src='https://dummyimage.com/450x300/dee2e6/6c757d.jpg' alt='...')
-                                // Product details
-                                .card-body.p-4
-                                    .text-center
-                                        // Product name
-                                        h5.fw-bolder Sale Item
-                                        // Product price
-                                        span.text-muted.text-decoration-line-through $50.00
-                                        | $25.00
-                                // Product actions
-                                .card-footer.p-4.pt-0.border-top-0.bg-transparent
-                                    .text-center
-                                        a.btn.btn-outline-dark.mt-auto(href='#') Add to cart
-                        .col.mb-5
-                            .card.h-100
-                                // Product image
-                                img.card-img-top(src='https://dummyimage.com/450x300/dee2e6/6c757d.jpg' alt='...')
-                                // Product details
-                                .card-body.p-4
-                                    .text-center
-                                        // Product name
-                                        h5.fw-bolder Popular Item
-                                        // Product reviews
-                                        .d-flex.justify-content-center.small.text-warning.mb-2
-                                            .bi-star-fill
-                                            .bi-star-fill
-                                            .bi-star-fill
-                                            .bi-star-fill
-                                            .bi-star-fill
-                                        // Product price
-                                        | $40.00
-                                // Product actions
-                                .card-footer.p-4.pt-0.border-top-0.bg-transparent
-                                    .text-center
-                                        a.btn.btn-outline-dark.mt-auto(href='#') Add to cart
-                        .col.mb-5
-                            .card.h-100
-                                // Sale badge
-                                .badge.bg-dark.text-white.position-absolute(style='top: 0.5rem; right: 0.5rem;') Sale
-                                // Product image
-                                img.card-img-top(src='https://dummyimage.com/450x300/dee2e6/6c757d.jpg' alt='...')
-                                // Product details
-                                .card-body.p-4
-                                    .text-center
-                                        // Product name
-                                        h5.fw-bolder Sale Item
-                                        // Product price
-                                        span.text-muted.text-decoration-line-through $50.00
-                                        | $25.00
-                                // Product actions
-                                .card-footer.p-4.pt-0.border-top-0.bg-transparent
-                                    .text-center
-                                        a.btn.btn-outline-dark.mt-auto(href='#') Add to cart
-                        .col.mb-5
-                            .card.h-100
-                                // Product image
-                                img.card-img-top(src='https://dummyimage.com/450x300/dee2e6/6c757d.jpg' alt='...')
-                                // Product details
-                                .card-body.p-4
-                                    .text-center
-                                        // Product name
-                                        h5.fw-bolder Fancy Product
-                                        // Product price
-                                        | $120.00 - $280.00
-                                // Product actions
-                                .card-footer.p-4.pt-0.border-top-0.bg-transparent
-                                    .text-center
-                                        a.btn.btn-outline-dark.mt-auto(href='#') View options
-                        .col.mb-5
-                            .card.h-100
-                                // Sale badge
-                                .badge.bg-dark.text-white.position-absolute(style='top: 0.5rem; right: 0.5rem;') Sale
-                                // Product image
-                                img.card-img-top(src='https://dummyimage.com/450x300/dee2e6/6c757d.jpg' alt='...')
-                                // Product details
-                                .card-body.p-4
-                                    .text-center
-                                        // Product name
-                                        h5.fw-bolder Special Item
-                                        // Product reviews
-                                        .d-flex.justify-content-center.small.text-warning.mb-2
-                                            .bi-star-fill
-                                            .bi-star-fill
-                                            .bi-star-fill
-                                            .bi-star-fill
-                                            .bi-star-fill
-                                        // Product price
-                                        span.text-muted.text-decoration-line-through $20.00
-                                        | $18.00
-                                // Product actions
-                                .card-footer.p-4.pt-0.border-top-0.bg-transparent
-                                    .text-center
-                                        a.btn.btn-outline-dark.mt-auto(href='#') Add to cart
-                        .col.mb-5
-                            .card.h-100
-                                // Product image
-                                img.card-img-top(src='https://dummyimage.com/450x300/dee2e6/6c757d.jpg' alt='...')
-                                // Product details
-                                .card-body.p-4
-                                    .text-center
-                                        // Product name
-                                        h5.fw-bolder Popular Item
-                                        // Product reviews
-                                        .d-flex.justify-content-center.small.text-warning.mb-2
-                                            .bi-star-fill
-                                            .bi-star-fill
-                                            .bi-star-fill
-                                            .bi-star-fill
-                                            .bi-star-fill
-                                        // Product price
-                                        | $40.00
-                                // Product actions
-                                .card-footer.p-4.pt-0.border-top-0.bg-transparent
-                                    .text-center
-                                        a.btn.btn-outline-dark.mt-auto(href='#') Add to cart
+                                .card-body.p-4.text-center
+                                    .feature-icon.mx-auto.mb-3
+                                        i.bi.bi-box-seam
+                                    h5.fw-bolder.mb-1 First product
+                                    p.font-mono.small.mb-3(style='color: #3B4A5E;') Status: in development
+                                    p.mb-0
+                                        | Details will be published here when available. Contact us if you have a specific requirement in the meantime.
+                                .card-footer.p-4.pt-0.border-top-0.bg-transparent.text-center
+                                    a.btn.btn-outline-primary.btn-sm(href='contact.html') Enquire
 
         // Footer
         include includes/footer.pug
