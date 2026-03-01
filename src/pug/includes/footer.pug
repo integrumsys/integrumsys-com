@@ -1,11 +1,11 @@
-footer.bg-dark.py-4.mt-auto
-    .container.px-5
+footer.bg-ink.py-4.mt-auto
+    .container(style='max-width: 1200px;')
         .row.align-items-center.justify-content-between.flex-column.flex-sm-row
             .col-auto
-                .small.m-0.text-white Copyright &copy; Cameron K. Brooks 2024  <!-- Copyright text -->
+                .small.m-0.text-white &copy; #{new Date().getFullYear()} Integrum Systems. All rights reserved.
             .col-auto
-                a.link-light.small(href='#!') Privacy  <!-- Privacy link -->
-                span.text-white.mx-1 &middot;  <!-- Middle dot separator -->
-                a.link-light.small(href='#!') Terms  <!-- Terms link -->
-                span.text-white.mx-1 &middot;  <!-- Middle dot separator -->
-                a.link-light.small(href='#!') Contact  <!-- Contact link -->
+                a.link-light.small(href='privacy.html') Privacy
+                span.text-white.mx-1 &middot;
+                a.link-light.small(href='terms.html') Terms
+                span.text-white.mx-1 &middot;
+                a.link-light.small(href='contact.html') Contact

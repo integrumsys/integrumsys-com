@@ -1,32 +1,22 @@
-nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
-    .container.px-5
-        a.navbar-brand(href='index.html') Integrum Systems  <!-- Navbar brand link -->
-        button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
-            span.navbar-toggler-icon  <!-- Navbar toggler button -->
-        #navbarSupportedContent.collapse.navbar-collapse
-            ul.navbar-nav.ms-auto.mb-2.mb-lg-0  <!-- Navbar navigation list -->
+nav.navbar.navbar-expand-lg.navbar-dark.bg-ink
+    .container(style='max-width: 1200px;')
+        a.navbar-brand(href='index.html') Integrum
+        button.navbar-toggler(
+            type='button'
+            data-bs-toggle='collapse'
+            data-bs-target='#navbarMain'
+            aria-controls='navbarMain'
+            aria-expanded='false'
+            aria-label='Toggle navigation'
+        )
+            span.navbar-toggler-icon
+        #navbarMain.collapse.navbar-collapse
+            ul.navbar-nav.ms-auto.mb-2.mb-lg-0
                 li.nav-item
-                    a.nav-link(href='index.html') Home  <!-- Home link -->
+                    a.nav-link(href='index.html') Home
                 li.nav-item
-                    a.nav-link(href='about.html') About  <!-- About link -->
+                    a.nav-link(href='about.html') About
                 li.nav-item
-                    a.nav-link(href='contact.html') Contact  <!-- Contact link -->
+                    a.nav-link(href='services.html') Services
                 li.nav-item
-                    a.nav-link(href='services.html') Services  <!-- Services link -->
-                li.nav-item.dropdown
-                    a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
-                        | Shop
-                    ul.dropdown-menu(aria-labelledby='navbarDropdown')
-                        li
-                            a.dropdown-item(href='shop.html') All Products
-                        li
-                            hr.dropdown-divider
-                        li
-                            a.dropdown-item(href='#!') Popular Items
-                        li
-                            a.dropdown-item(href='#!') New Arrivals
-            form.d-flex
-                button.btn.btn-outline-dark(type='submit')
-                    i.bi-cart-fill.me-1
-                    | Cart
-                    span.badge.bg-dark.text-white.ms-1.rounded-pill 0
+                    a.nav-link(href='contact.html') Contact
