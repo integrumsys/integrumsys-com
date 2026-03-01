@@ -5,15 +5,16 @@ const renderPug = require('./render-pug');
 
 const srcPath = upath.resolve(upath.dirname(__filename), '../src');
 
-sh.find(srcPath).forEach(_processFile);
+(async () => {
+    const files = sh.find(srcPath).filter(_isPugPage);
+    await Promise.all(files.map((filePath) => renderPug(filePath)));
+})();
 
-function _processFile(filePath) {
-    if (
+function _isPugPage(filePath) {
+    return (
         filePath.match(/\.pug$/) &&
         !filePath.match(/include/) &&
         !filePath.match(/mixin/) &&
         !filePath.match(/\/pug\/layouts\//)
-    ) {
-        renderPug(filePath);
-    }
+    );
 }
