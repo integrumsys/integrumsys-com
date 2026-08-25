@@ -30,6 +30,14 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Fail if dist/ differs from the committed tree
+        run: |
+          if ! git diff --exit-code --stat -- dist/; then
+            echo "::error::dist/ does not match a clean rebuild. Run 'npm run build' and commit the result."
+            exit 1
+          fi
+          echo "dist/ reproduces exactly."
+
       - name: Verify output
         run: |
           for page in index about services contact shop privacy terms; do
