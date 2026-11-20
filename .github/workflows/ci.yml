@@ -47,3 +47,7 @@ jobs:
             fi
           done
           echo "All 7 pages present in dist/"
+          if [ ! -f dist/_headers ]; then
+            echo "MISSING: dist/_headers"
+            exit 1
+          fi

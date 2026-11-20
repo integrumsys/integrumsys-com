@@ -8,4 +8,5 @@ module.exports = function renderAssets() {
     const destPath = upath.resolve(upath.dirname(__filename), '../dist/.');
 
     sh.cp('-R', sourcePath, destPath);
+    sh.cp(upath.resolve(upath.dirname(__filename), '../src/_headers'), destPath);
 };
