@@ -76,6 +76,11 @@ Response headers (HSTS, CSP, framing) live in `src/_headers`, which the build
 copies to `dist/_headers`. The CSP ships as `Content-Security-Policy-Report-Only`
 until a pass over every page shows no violations in the browser console.
 
+Cloudflare serves each page at its extensionless path: `/about.html` answers
+with a 307 to `/about`, and `/` serves `index.html`. The internal `.html`
+links still work, through that redirect. `html_handling: "none"` would keep
+the `.html` paths but returns 404 for `/`.
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
