@@ -37,36 +37,10 @@ html(lang="en")
                         .col-lg-7
                             // Direct email notice
                             .alert.mb-4(style="background-color: #e6f7f8; border: 1px solid #0e9aa7; color: #0b1220")
-                                | Form submission is being set up. Reach us directly at&nbsp;
+                                | Email us directly at&nbsp;
                                 a.fw-500(href="mailto:contact@integrumsys.com" style="color: #0b7f89") contact@integrumsys.com
 
-                            // Contact form
-                            form(action="mailto:contact@integrumsys.com" method="GET")
-                                // Name
-                                .form-floating.mb-3
-                                    input#name.form-control(type="text" placeholder="Full name" required)
-                                    label(for="name") Full name
-
-                                // Email
-                                .form-floating.mb-3
-                                    input#email.form-control(type="email" placeholder="name@example.com" required)
-                                    label(for="email") Email address
-
-                                // Phone (optional)
-                                .form-floating.mb-3
-                                    input#phone.form-control(type="tel" placeholder="Phone number (optional)")
-                                    label(for="phone") Phone number (optional)
-
-                                // Message
-                                .form-floating.mb-4
-                                    textarea#message.form-control(placeholder="Message" required style="height: 10rem")
-                                    label(for="message") Message
-
-                                .d-grid
-                                    button.btn.btn-primary.btn-lg(type="submit") Send message
-
                             // Direct contact
-                            hr.my-4(style="border-color: #d7dee8")
                             p.mb-1
                                 span.font-mono.small(style="color: #3b4a5e") Email
                                 |
