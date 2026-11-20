@@ -1,0 +1,9 @@
+// Assets-only Worker: Cloudflare serves the committed dist/ directly.
+// There is no Worker script and no build step on Cloudflare's side.
+{
+    "name": "integrumsys-com",
+    "compatibility_date": "2026-11-01",
+    "assets": {
+        "directory": "./dist",
+    },
+}
